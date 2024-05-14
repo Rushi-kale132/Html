@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">iCoder</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">about</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Topics
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Technology</a></li>
+                            <li><a class="dropdown-item" href="#">Web Development</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Support</a></li>
+                            <li><a class="dropdown-item" href="#">write for us</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Contact Us</a>
+                    </li>
+                </ul>
+
+
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- alert -->
+    <div class="alert alert-primary" role="alert">
+        A simple primary alert—check it out!
+    </div>
+
+    <!-- alert 2 -->
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <strong>Success!</strong> Your form has been filled succesfully
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+
+    <!-- breadcrumb -->
+
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Blog</a></li>
+            <li class="breadcrumb-item"><a href="#">Technology</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Bootstrap on one video <span
+                    class="badge bg-secondary">New</span> <span class="badge text-bg-success">New</span></li>
+        </ol>
+    </nav>
+
+    <button type="button" class="btn btn-outline-primary">Primary</button>
+    <button type="button" class="btn btn-outline-primary btn-lg">Primary</button>
+    <button type="button" class="btn btn-outline-primary btn-sm" disabled>Primary</button>
+    <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+        <div class="btn-group me-2" role="group" aria-label="First group">
+            <button type="button" class="btn btn-primary">1</button>
+            <button type="button" class="btn btn-primary">2</button>
+            <button type="button" class="btn btn-primary">3</button>
+            <button type="button" class="btn btn-primary">4</button>
+        </div>
+        <div class="btn-group me-2" role="group" aria-label="Second group">
+            <button type="button" class="btn btn-secondary">5</button>
+            <button type="button" class="btn btn-secondary">6</button>
+            <button type="button" class="btn btn-secondary">7</button>
+        </div>
+        <div class="btn-group" role="group" aria-label="Third group">
+            <button type="button" class="btn btn-info">8</button>
+        </div>
+    </div>
+
+
+    <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+        <button type="button" class="btn btn-primary">1</button>
+        <button type="button" class="btn btn-primary">2</button>
+
+        <div class="btn-group" role="group">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Dropdown
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="d-grid gap-2">
+        <button class="btn btn-primary" type="button">Button</button>
+        <button class="btn btn-primary" type="button">Button</button>
+    </div>
+    <hr>
+
+    <div class="card" style="width: 18rem;">
+        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBUVFRUSEhUVEhISGREYERIYGBISEhISGBQZGRkVGBgcIS4lHB4rHxgYJjgmLC8xNTU1GiQ7QDszPy40NTEBDAwMEA8QHhISHzQlJCs0NDQ0NDQ0NDQxNDY0NDQ0NDE0NDQ0NDQ0NDQ0NDQ0NDQ0NDE0ND80MTQ0NDQ0NDQ0NP/AABEIAOEA4QMBIgACEQEDEQH/xAAbAAEAAwEBAQEAAAAAAAAAAAAAAwQFAgYBB//EAD0QAAICAQMCBQIEAggEBwAAAAECABEDBBIhMUEFEyJRYTKRQlJxgSOxBgcUM2KhwdGS4fDxFSRTY3KCwv/EABoBAQADAQEBAAAAAAAAAAAAAAABAgMEBQb/xAAsEQADAAIBAwIEBQUAAAAAAAAAAQIDERIEIUETMQUUUaEVInGB8DJCUmGR/9oADAMBAAIRAxEAPwD8hqAJ2Fn2p6WjHZyBOlWfQJ2olpIbPoWdBZ0qyQLN5MnRFtnLJLIScskVPYhUQbZ92SbbPoSVUjkRhZyVk+2fCss0RyINsbZNtjbKJE8iArPm2T7J82SdE8iELBWTbJ82RociGp9CSYJO1xy8TsOyDZI2SXCkidJpUdhNlMrOSJZZJGVmDnRqqIqnypIVnJEo0W2cVPlTuoqVaJ2cROqiNE7LAE6CzoLOwkJHO6Igs6VZMEn0JJ0VdBFkqpCJLCJNpZnTIwkHHLSY5J5U0M9sojHPoxy6MUkXDKaJM7y58bHNLyZw+GQyUZ+yNkunDHlSESUtk5KTQ8mcnDLaK7ZQ8uPLl04YXDJUh1oqpjkoxy2uGdeXOiJ0ZVkKDpIHSaDpIGSWpbLzZQdJCyy86SBlnPcm80ViJwRJis5KzFo1VEJWfNsmqc1KMvyI6id1EDZcVJKmOSY0llMchGDWyuuKSrilpMUkXFLbKaKq4pYTFJ1wyfHihPQa2QJikgxS2uKTeWB/lNORHEz/ACZKmKWkQE0O3WfErm+CDz8daleaJ4MrnF/OvvOWwy6uKsYY9W2ke4G4VD4/ayR144HFUTKOyeJmNjjyZcZeQO4NH/hJnSJdfA5/WFQclQYZ8OGaPlQMM12U0ZhwTpNPNMYJKuml5pFKRleROGxTYbTStmxVOiaMakxsiSuyTRzJKrpJ3sqnoo5FlV1l/IsqusxpnRFFYrOCsnZZwVmLN1RAVnJEmKzgrMmXTI6idVEFtm7iwXLSaVgN207bq+1zR1OiqqI/afceJyNpvaex955/zL0dHoLZTTF7iTrinodD4UrYX3/VjDMH7gKt1/ymVjSa4OpnLtLwZ5sDjW/JCmKSJiltMcmGPvOl0YqSBMUjKehQOSbb9gbJ/lNLGBx1N+wJ7X2lDUoFdAN2zJuVQystM12ouup/lMqvRpMDUYtlFTuJrevVmFdVA/lKOqxEMAh3B1baLNseQDZ9hf3E09NkLuMeQhW3VtNryoX0/PLEgj2lPxfTBc2NAwUOHYLfIZdrfUbAViQOe9+8zrJ2LKCNG3K+4kFegFk7VIIb/Cvfmr/neyZduMNtrggAmvpvnntY5Pz3752Zht9BYPkDgWDQDEeXusdCpPPyJJpse84wX/htasGFAILBB54JaxXHHMosjLOERoCt32QHpW0kkfueK/aXMOPpQ47H35oc9+JXRFR27qm1GstYcKT35rkfeWdNrMaqvJYkkKOSxPX09269prN/UzqSx5ULinWBncWEH7tR+wFy3hwnuP5ij83/ADmyvZk5IcWnlxdMZa0+mlwYeJPqDgYuXD8TK1KT0erTiYubHN8dmFyY2TFKeZJs5UmdmSb8jByZOVZXZJovjld8cyqi0plBlkbLLjpIjjmbZqmVSs5KyyySNllS6ogqJLtiQW2e1wvZ/wBJpYsRIFCUNNpgT7fyE3tK6ptF3PnM9tL8vdnu4Z3/AFFnQaa1dWJG9Sp/QirmCmOiR1okA+4vrPR67XlV241+pRT9evX95i48c0+GrIlVV2T9kY9Y5pqV4O8WOWFxVO8CSyU7D9+L+AAPcz1PUOLgQjBfHT2YdVNdRKOvwNsrI+1Wb0sAaLg8Gh1Ngfvx3k2uxZEWw203xSDuKAu6/wC/7TFzavL9WTYWaxu2qSqi15UHcgse3vcyqtl1J1i3PYKDeroSS3rxsy1tUVzdNXwy/EravVOdRjTIrPlCZ0UnZTBmxqpA+5P6Gd6oNhyo+NhkcFPMKVtKmwiuhqiHC1wRz1F3IEN6vTl2IVBnDGgoArGrCm4FXyvUENfWZtk6NPNomRyS4HosISz41xqGLYxyTtoimPFt26SLw9VGMcqvIbI/JUq6h0Knpakla+PtoYGUPu9LYsbF9gVi2P8AC5Cj8ND4Nj26ec1mo2rvWmXF5gClAQWwsWRDx9NoeT2b3uNknSb8hHlsuTI+TIFXcWIXews3W0UDyOeB7cbCaRh6WpHc07Eq9rXA3FfT24Pv73M7RacYqUkl1CM5QHjKVUGwLoqAB7044via+g1WFGbIf4g2jeBW4MePxcCqI636pKoq0aemwOprIFN1tYdDQ6UO/WX00oPMiw+IYyo3ti2cbjvDEjn8BAIHA+enHte0IR/7pjsFdSrIR/h5J/0E1VlHJLi09TvJjlwJUr6ngSZrbIa0YeuEy8mOa2cWZSzJ2nbHZHLaMnOkoZMc2ciSrkxzbloxc7Md8cqvjmtkxyB8Mq2SkZLYpw2KabYpE2KZtmiky3xyJsU1TgkbYJXZOjL8qJoeTEdxo29LqOKPEs+eSOvSZeFpp4ksTxaSR7U7aNnw/UeYvlvyR9B7/pOjio8TM07FSK7T0GM71ugGH8vaZLLOGteG/wDjLVjeSd+V9zjCku4kHXuPeQ4lqTZcdj6qNHiytj9RyO06+Zy8SDXAuNiNXID1XA6kfqRY7TB1QOJiER9rlNzik6VXfgd+5sewmhqPFeFVEdDdIUVciM3sNwAYc8npyeeePIeJ+Ou267REtwhZUPU2zFTYB54XueOJV0/BPFa7jxrMUDLiVMYY43fGFZtrhvSUCilBI5A6mz1POSfE9+YOjbg6akeosgO9CbIbdzSkX3oXLmn17UGXG25BYYspAa2O7aaNDcT06kEkzK1WJlRnCBfJfCVbeA3lZvMJUKppgSSLvgAD3klT0mh1OwoLbGXfbuJ3LTH6xdfHPueLo1j620xZUQlaz4/0Ulg6lRzz6zyOaWv1k8UyY3UMHK+rGHxn1Ft1kNzzXPf36zMy6jbkVyrMqZNOyY91+oYF7CyeVWuTwK78yQejx+HHZvdshYuDkxM72EJFu4utxN82fbpya3oR7xMuxjj3nYS+N7ddylVO3oBxzbfEs+G5Vzea2XMgO0syuPLx+XyapqtgR1+riV8uNGTexDZsg4VNzXjobARwFbg8sbFkG6FAej8P8WfGVxlSUdvrVGXI2S+Opon3I5N9OpPptH4jjYsxY4st843pDvHVGXtfX9TffnynhnjoVCmdGxqvll2ZhkG08biByOo57cfrPRaTW4MpRdpzZAV2sP4eNgVB+rIVDjoTW7kd5Owen0+QOtrZHzzKur54lJ8Dn8S4VO2ijEhVI56qF6d67dZImiKbQ5ZzQG4ksPezfAP6cGXiu5Sl2K+THKeTDNZsU4bBOxXo5nOzDyYJUy4pu5sMpZMMssuyHBi5MUgOKbL6a59XR/EisiCxmGdPPh0s3zpQJXzYwJTmX4mG2nqVcqTWziUMiS/IrwKVRJvLiV5luBm6PNyJ6HS6hSoFczxGDUTX0esoiedknZ6OOtHrcCcz0OgxgC+/eeT0OrBHWei0ma19BFn55nj9VtUm12TPSwpOWl7lzJ6eRyObA6/tM/X65BSvarzua+o/KoBprNccyVkyPYxvRBWzSkL8G+TftfaVX0zlWNI4oWSWvobqwbHXoR1+/Rh6h1KZzZMKl6PO+K+c2MnGjAM1Jk3Mrbm9bBVLVtHPNdu5u/MajSsOCbJ3b7XeTY+q+LB479p6fxvWmhuxsrAIEHpXGEUrbhb3VQHb2nnlzOzhvNTchJVGCo1WzbgOK6XuPPIndNNo46S2T4M+bdupHChtw27VABUlNtrRAAv1CrPPaUNZnS2VUXGuXCEobvTkRrG2623YsUevHXi3pfF/LY+lQjqSwouFauctX6h/hIFWD7khp2fPpwys2XKcwBJQblOOgKHI96PY+5ltldH3RaRc1OWFOm8mqpgCGQC/pDbx/wDUGU9dp1PnPislNRhXHk/hqQu0gDZ1PJBscdLn3S4zgy51sHHjyFHUk0qlyFcgdV5qvejPuuzL5OoVAzHzcb+ZbHaFVVN8UfUSLPNgV3udkHHiWoG5U377AfK31bcm7heQTdIpq6JI4HM6D5EIDf8AlwwW3YFjkB5DsCdqmq6dKrtI8fh7XiyO29su93Cimx1ySa46EdKoCb+XwUHG5wt6sKFsDEu4bGRvZQCOGUgmx1vpwbbGjnRZTvGRyMuQ1WTIaG/jlHWghG4fH1cnrPT/ANHtaq78ZclGd9isVJDFSdrDopDXyKA2iutzD8JfFlQglseQbWboCNo+sKKDEH/It78XsGlXcXKHcnLBQrGgQvoI6kE42B68kVzGxo99psjB0XIxdCGKNx6wS1Dj6qHfkkC+5qyh3AcUB19yexrqO/tMDRal2T/1kO1t4bGQVuz6fwiiT8X8XNzS6gMAOhHVQOnya4F9ZeWUZNsnDpJC05PMs7IUlN8chbBNEpI2FSrstxKB04nDoBLWRpSzNCsniVszTPzy7klV1kqyHBm5ElbJjmjkEo5pbmRwK22J9qI5jieBS5dwORL+Tw9QCQDftKLoV6iphyVG3Fyamk1dTe8O1w63U8cjy7p8pEwy4lSZ0Ysrln6JpNUoDAm1Yde3P5viWM9uXUMVxrbkEKQxrhKIP5r/AGHYzx2i1ZHX/aX31rFByyIpLF7CkEVz7k8X+328xx6Vdu52U+a2ZniDDJldkFFQwVyLKFHJLG+NxbgWe8zM+nDK/pVwu0r0b1MAqq35iSAP1I6C5v4tMXKgLW9STZJrHTUpA7kJXwW63KXienLN5C0EWi9VTMCzBE28kLRH68dqnoRkTOC4Zk5vC9unBVHVmDvkdmXymRX2qFWiwNq9MK6nrHgGtYZ9JgzF7x5VINhQMWwqQD+auh54qjPZtjXImVjW2sbeXwDQWlAb8KjcPT03EzyPjCNjxYci3v0WQV0sC1ILEdbpT/3mkZFXYzca7lv+lOmGnzDKiq2PUK+Mo7WTu9S7i3XaSAWPt15nlMW/yxplB3Zsibara5BZBz1+o/pPYeMZE1WHM7t/A0uFWxkNRbUZNrBjxzQIWv8A3PiY39CfDXzatVNqdKruQNqspU1xZHq3Nf7S6ep2/BRrv2NrUeHZA2P8WwIielQGU7rQkVfTji+b/W3mxlk80EBWKh1B2hVRuC4/EdrdQehPvPV6LAX3IyAF3ZkWtpGQopHP/wARV+4JuVcvhlF/TubIzEKlbxkApwbq7LMRfseRQmKzLZpxMfQaVk1CWoC5HyIrB/QMgNlNxHHOyrHIscieg1eINvcApmwbVy47YK+NkCllI6gMGI46JRHFT5k8HL414cNZfgqoDoSt0elqe5u/3vvOhZEdXByAMvUB27lL6EnbdVVgTScip9iKnSK/hT7RuW1CMd5UsU5NWUNURY6VPS4MvG0ADk3VVfxXWZGlRn27+SbJ2glWskhjz0piKPuZsaZGHDc+xAAFe1e80dpFFDZMouSic3U4d5jWdI1nC2dO8q5HnTPIHaY/MI1WAjcyu4kztK+SWnOHiK7mVcksZDK2UzRZUR6RVySlmEuPyfeQ7RuAYg3fHXp7/EV1Eyu4nBVPsULiWto9x9v+UTL5yfoX+Vo8/wD2m+s7dEfgiZKZ5ZTN8yzhr2JVJ+503hv5T95Ni8OfrV/uJ8TUfMt4dZUyusqXbuWmY2WdNpGA56fPaWs4YqQUBCqOB9IuyCQPqPx+khx68d5YTUjhjwbsgCxXHBH7CcFVe90jpUy1qWWPD/SAw9OV2VENcqiguWPe7P7nbIcSKc+TIDuCEKnO1iFXczGv0+xuNM1MS7WaNbQeRxyOvvXzUseH4RRFhd9hgFUHkAHnnsD95m8rnb2PR5aRo+FldofIt+WrF245BWxQrpbOf1+04z+EhkbDkqs6AZODfmUSKbsx69D9A+JYLithG4M20mugYWwP6iaOLY3VVIJ6EAjge0531tx30RXTeD8k8NTJk2+EbCrLqHOfIN390p9YZR7Fbv8AQTe/q1RW1usZVtQHCf4Q2U7QL+BVHrHjGpGk8XGfhUy4WLdh/cslf8SD7yb+plCTq2N8/wBnG75DM3+09fP1D+VrLrtpP92+55qjV8fO39j9O0OjOwMwXeQfULur449wKo9eBKb6ZQcz7tm+mxt6gwZC5B9XBNn9x1m3iHsOvt3MpeOZgmFmIuwVA7WR3M+dx9flp/lXu9GyW60Z+vyKK3hQ/RiOT06kkccylixK7EAKUoWfxA9qIlTxHKHQZQdoNCj1aupE++DZVAJDXfVfb5nqYLcY3lpve9NeDqePeo0bWHSovQAn8x9TE+5J7y0DKI1InxtRK18QT8lp6bRdd5Azyll1wBomvmRZNYB3mNdU69jacGi4zyJnmdm8RA46ynm8YX+febYlkudpFaUy+7NPLq1BCm7Mjy5Z5nU+JD81n3nWPxfcKPUd/ed6w3MpnO8kOtI18ueVnyX3/WZWXW2buc/277y3Gkv9jlOzQfOD9Nivw8c/7yg+qIsAVX7SBtWLFfv7StrNXQNkUOSfiVnC2+5asiS7Ev8Aa39jE89/49j9mn2dHy6+hj66+pkLqD7yRdUZmbzG4+87NHFzNhNYZMuumDvPvPvmH3kONk+oeiTxH5lpPEvejPJ+YfefRmb3mVYJr3Lzncnt8HjG2+guunEv6fxpep4+eJ+cnM3uZ88w+5+8wroIo3nrqnwfqS+MqSBvFiz1HsRLej/pBjDFS63xxc/Id59zG4zJ/C8dLTZqviTX9p7X+sTWY8xwvjZWZAyvRs0aZf8A9S9/Vx43i02LNvYKzuprvtC9fuTPzwz4DOiuiiun9Bvt/Gcj6hPK8mv2P39v6wNNjXhwzkNt6FQ1cFuelzF1/wDS8Z8AVs2IsOVotuPThr/64n40TFzDF8Lx4p4y377JXUpVtSj32fxdmIUsOBQG4UB/pNfwXX7btlo0eDPyq52Mre5+5nRl6X1I4b0v0LYupUXzabf6n7SPGkH41+4nxvGkH4h95+Mec35j/nOjqn/M33M4PwaPqdn4nP8AifrefxNDfqAP6zPy6rmw/wD195+Y+c35j9zO11LD8R9upm0fDeHs/sVr4jNe8/c/Qc+qvnfzKj5h3eeH/tDfmb7mfPOb8x+5nTPT1K1v7HNXUxT3x+56/JnX83+ciOsrpPKeYfcwchPczZQ/LMnlnwj07eIn3kD+In3nn959zG8+8soRV5Td/wDEZT12sZ12g8d/n4mbuPvG4yVKRV22tH3yzE+bj7xLFDmIiCBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREA//2Q=="
+            class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+        <div class="card-header">
+            Featured
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">An item</li>
+            <li class="list-group-item">A second item</li>
+            <li class="list-group-item">A third item</li>
+        </ul>
+    </div>
+
+
+    <hr>
+
+
+    <div class="card text-center">
+        <div class="card-header">
+            Featured
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+        <div class="card-footer text-muted">
+            2 days ago
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+            <div class="card">
+                <img src="https://images.all-free-download.com/images/graphicwebp/cold_frozen_glacier_ice_landscape_mountain_nature_603873.webp"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                 <img src="https://images.all-free-download.com/images/graphicwebp/beach_cloud_island_landscape_lava_mountain_nature_600361.webp"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+              <img src="https://images.all-free-download.com/images/graphicwebp/beach_calm_coast_evening_lake_landscape_nature_598981.webp"
+                class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                        additional content.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="https://images.all-free-download.com/images/graphicwebp/lake_tisza_nature_trail_and_231641.webp"
+                class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title width="400" height="400"</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://all-free-download.com/free-photos/download/sunset_17_212148.html" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.all-free-download.com/images/graphicwebp/stunning_sunset_background_210776.webp" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.all-free-download.com/images/graphicwebp/pier_at_folly_beach_199213.webp" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://all-free-download.com/free-photos/download/sunset_17_212148.html" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.all-free-download.com/images/graphicwebp/pier_at_folly_beach_199213.webp" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.all-free-download.com/images/graphicwebp/pier_at_folly_beach_199213.webp" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

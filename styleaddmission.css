@@ -1,0 +1,20 @@
+body{  
+    font-family: Calibri, Helvetica, sans-serif;  
+    background-color: E8E2E2;  
+  }  
+  .container {  
+      padding: 50px;  
+    background-color: rgb(233, 239, 241);  
+  }  
+
+  .containerdiv label {
+    float:left;
+    width:25%;
+    text-align:right;
+    margin-right:5px; 
+  }
+  .containerdiv input {
+    float:left;
+    width:65%;
+  }
+  

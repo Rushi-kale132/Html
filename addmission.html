@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="styleaddmission.css">
+    <script src="scripts.js"></script>
+    <title>admission Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <form action="">
+            <center>
+                <h1>Admission Form</h1>
+            </center>
+            <table cellspacing="10">
+                <tr>
+                    <td><label for="fname">First Name</label></td>
+                    <td> <input type="text" id="fname" name="firstname" placeholder="Your name.." required></td>
+                </tr>
+                <tr>
+                    <td><label for="lname">Last Name</label></td>
+                    <td><input type="text" id="lname" name="lastname" placeholder="Your last name.." required></td>
+                </tr>
+                <tr>
+                    <td><label for="country">Country</label></td>
+                    <td><select id="country" name="country">
+                            <option value="India">India</option>
+                            <option value="canada">Canada</option>
+                            <option value="usa">USA</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td><label for="Bdate">Date of Birth</label></td>
+                    <td> <input type="date" name="Bdate" id="Bdate"></td>
+                </tr>
+                <tr>
+                    <td> <label for="number">Number</label></td>
+                    <td><input type="number" name="" id="" required placeholder="Enter Your Number" size="10"></td>
+                </tr>
+                <tr>
+                    <td> <label for="department">Select Department</label></td>
+                    <td><select id="department" name="department">
+                            <option value="Computer">Computer Science Engineering</option>
+                            <option value="Chemical">Chemical engineering.</option>
+                            <option value="Civil">Civil engineering</option>
+                            <option value="Electrical">Electrical engineering.</option>
+                            <option value="Civil">Civil engineering</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td> <label for="Gender">Gender</label>
+                        <div>
+                            <input type="radio" id="Male" name="Male" value="Male" checked>
+                            <label for="Male">Male</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="female" name="female" value="female">
+                            <label for="female">female</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" id="other" name="other" value="other">
+                            <label for="other">other</label>
+                        </div><br><br>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> <label for="marks10">Enter 10th Percentage</label> </td>
+                    <td><input type="number" id="marks10" name="marks10" placeholder="Enter 10th marks"
+                            aria-placeholder="Enter 10 marks" required size="3"></td>
+                </tr>
+                <tr>
+                    <td> <label for="marks12">Enter 12th Percentage</label></td>
+                    <td><input type="number" id="marks12" name="marks12" placeholder="Enter 12th marks"
+                            aria-placeholder="Enter 12 marks" required size="3"></td>
+                </tr>
+
+                <br><br>
+
+                <tr>
+                    <td> address:</td>
+                </tr>
+                <tr>
+                    <td> <textarea name="Address" id="Address" cols="30" rows="10">Enter Address</textarea></td>
+                </tr>
+
+            </table>
+
+            <center><input type="submit" value="Submit">
+           
+            </center>
+        </form>
+    </div>
+</body>
+
+</html>

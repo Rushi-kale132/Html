@@ -1,0 +1,31 @@
+body {
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: center;
+    background-color: beige;
+  }
+  input[type="text"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 70%;
+  }
+  button {
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  li {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+ 

@@ -1,0 +1,97 @@
+* {
+	box-sizing: border-box;
+}
+h1 {
+    font-family: 'Sacramento', cursive;
+	font-size: 30px;
+	margin-bottom: 20px;
+    color: yellowgreen;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+}
+
+header {
+	background-color: #d9dee0;
+	color: #fff;
+	padding: 2px;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+    color: #000;
+}
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li {
+	display: inline-block;
+	margin-right: 20px;
+    
+}
+
+nav ul li:last-child {
+	margin-right: 0;
+}
+
+nav a {
+	color: #000;
+	text-decoration: none;
+}
+
+main {
+	position: relative;
+	height: 100vh;
+}
+
+#bg-video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin: 0;
+	color: #f5eeee;
+}
+
+.content h1 {
+    font-family: 'Sacramento', cursive;
+	font-size: 3rem;
+	margin-bottom: 20px;
+}
+
+.content p {
+	font-size: 1.5rem;
+}
+.content h3 {
+    
+	font-size: 3rem;
+    margin-top: 0;
+	
+}
+
+
+footer {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+}
